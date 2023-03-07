@@ -10,6 +10,7 @@ Somos un equipo de desarrolladores que aplican sus conocimientos de lógica difu
 
 ## Archivos
 - <img src="https://img.icons8.com/color/24/000000/java-coffee-cup-logo--v1.png"/> **FCL**: Se encuentran las reglas implementadas para el desarrollo del FIS en Java
-- <img src="https://img.icons8.com/color/24/000000/matlab.png"/> **FIS_Matlab**: Desarrollo del FIS en el software de Matlab
+- <img src="https://img.icons8.com/office/16/000000/folder.png"/> **FIS_Matlab**: Desarrollo del FIS en el software de Matlab
 - <img src="https://img.icons8.com/color/24/000000/java-coffee-cup-logo--v1.png"/> **FIS_Java**: FIS desarrollado en Java (Interfaz) en dos formatos de compresión (Zip y RAR)
-- <img src="https://img.icons8.com/color/24/000000/prolog.png"/> **SE**: Sistema experto desarrollado en Prolog
+- <img src="https://img.icons8.com/office/16/000000/folder.png"/> **SE**: Sistema experto desarrollado en Prolog
+
