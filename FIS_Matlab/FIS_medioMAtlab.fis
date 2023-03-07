@@ -1,0 +1,98 @@
+[System]
+Name='FIS_medioMAtlab'
+Type='mamdani'
+Version=2.0
+NumInputs=3
+NumOutputs=2
+NumRules=36
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Age'
+Range=[0 120]
+NumMFs=6
+MF1='Infancia':'trimf',[0 2 4]
+MF2='Ninez':'trimf',[3 6 9]
+MF3='NinezTardia':'trimf',[8 10 13]
+MF4='Adolecencia':'trimf',[11 18 22]
+MF5='Adultez':'trimf',[18 44 70]
+MF6='Vejez':'trimf',[60 90 120]
+
+[Input2]
+Name='FecActiFisica'
+Range=[0 14]
+NumMFs=5
+MF1='MuyBaja':'trimf',[0 1 3]
+MF2='Baja':'trimf',[2 3 4]
+MF3='Media':'trimf',[3 6 8]
+MF4='Activo':'trimf',[7 9 12]
+MF5='MuyActivo':'trimf',[10 12 14]
+
+[Input3]
+Name='FecConsuBebidas'
+Range=[0 14]
+NumMFs=4
+MF1='NuncaOCasiNunca':'trapmf',[0 1 2.3 3]
+MF2='Ocacionalmente':'trapmf',[1.5 3 5.2 7.6]
+MF3='Frecuentemente':'trapmf',[5 7 9 10]
+MF4='MuyFrecuentemente':'trapmf',[8 11.2 12.5 14]
+
+[Output1]
+Name='Kilocalorias'
+Range=[300 6000]
+NumMFs=4
+MF1='MuyBaja':'gaussmf',[378.928187820809 800]
+MF2='Baja':'gaussmf',[420.305403732276 2500]
+MF3='Media':'gaussmf',[307.062497027208 3500]
+MF4='Alta':'gaussmf',[479.104605290677 5000]
+
+[Output2]
+Name='RiesgoEnfermedades'
+Range=[0 10]
+NumMFs=4
+MF1='MuyBajo':'gaussmf',[1.769 0]
+MF2='Bajo':'gaussmf',[1.769 5]
+MF3='Medio':'gaussmf',[1.769 8]
+MF4='Alto':'gaussmf',[1.60818329048619 10]
+
+[Rules]
+1 0 0, 1 1 (1) : 1
+2 0 0, 2 1 (1) : 1
+1 2 0, 1 1 (1) : 1
+1 3 0, 2 1 (1) : 1
+1 4 0, 2 1 (1) : 1
+1 5 0, 3 1 (1) : 1
+3 2 2, 2 3 (1) : 1
+3 2 3, 2 4 (1) : 1
+3 5 4, 3 4 (1) : 1
+5 2 1, 3 1 (1) : 1
+5 2 3, 3 3 (1) : 1
+5 2 4, 3 4 (1) : 1
+5 4 1, 4 1 (1) : 1
+5 4 3, 4 3 (1) : 1
+5 4 4, 4 4 (1) : 1
+6 1 1, 3 1 (1) : 1
+6 2 1, 3 1 (1) : 1
+6 3 1, 4 1 (1) : 1
+6 5 1, 4 1 (1) : 1
+6 1 3, 4 3 (1) : 1
+6 1 4, 4 4 (1) : 1
+6 3 4, 4 3 (1) : 1
+6 3 2, 4 2 (1) : 1
+6 5 2, 4 2 (1) : 1
+6 5 4, 4 3 (1) : 1
+6 5 4, 4 4 (1) : 1
+4 0 0, 3 0 (1) : 1
+4 0 2, 3 3 (1) : 1
+4 3 2, 4 2 (1) : 1
+4 3 1, 3 1 (1) : 1
+4 5 1, 4 1 (1) : 1
+4 4 3, 2 3 (1) : 1
+4 4 4, 3 4 (1) : 1
+4 1 4, 3 4 (1) : 1
+4 2 4, 3 4 (1) : 1
+4 2 1, 3 3 (1) : 1
