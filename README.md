@@ -1,4 +1,4 @@
-# <img src="https://icons8.com/icon/2O8UswElgfH7/nutrition"/> NutryCopylot SA.
+# <img src="https://icons8.com/icon/rb3sE129zEYO/nutrition"/> NutryCopylot SA.
 
 ## Descripción
 Somos un equipo de desarrolladores que aplican sus conocimientos de lógica difusa en pro de la salud y nutrición de las personas.
